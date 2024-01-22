@@ -1,6 +1,3 @@
-## Behind The Scenes:
-   ![DataFlow Diagram](/DataFLow.png)
-
 ### To see the live project, click [here](https://newbse.vercel.app/)
 
 # BhavCopy Analyzer
@@ -9,7 +6,7 @@
 
 Welcome to BhavCopy Analyzer.This project aims to get the stock details by using BhavCopy provided by BSE India. It includes modules for handling CSV files, fetching stock data, and managing a SQLite database.
 
-## Features
+## Project details
 
 1. **Database Initialization (database.js):**
    - Initializes an SQLite database with tables for storing stock information.
@@ -25,6 +22,9 @@ Welcome to BhavCopy Analyzer.This project aims to get the stock details by using
 4. **Server Setup (index.js):**
    - Sets up an Express server to handle API requests.
    - Enables CORS for cross-origin resource sharing.
+
+## Behind The Scenes:
+   ![DataFlow Diagram](/DataFLow.png)
 
 ## Getting Started
 
