@@ -371,6 +371,7 @@ async function fetchAndShowStockData() {
       console.error('Error fetching and showing stock data:', error);
     }
 }
+git remote set-url origin https://github.com/suryagowda/newbse-server.git
 
 
 // Initialize the page by fetching top stocks and favorite stocks
