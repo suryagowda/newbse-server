@@ -7,7 +7,7 @@
 
 ## Overview
 
-Welcome to the Stock Data Management System! This project provides a backend system for managing and processing stock-related data for [this project](https://newbse.vercel.app/). It includes modules for handling CSV files, fetching stock data, and managing a SQLite database.
+Welcome to BhavCopy Analyzer.This project aims to get the stock details by using BhavCopy provided by BSE India. It includes modules for handling CSV files, fetching stock data, and managing a SQLite database.
 
 ## Features
 
