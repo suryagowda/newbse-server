@@ -35,7 +35,7 @@ Welcome to the Stock Data Management System! This project provides a backend sys
 
 2. Run the server:
     ```bash
-    node index.js
+    npm start
 
 3. Access API endpoints:
     - Top 10 Stocks: GET /top10stocks
