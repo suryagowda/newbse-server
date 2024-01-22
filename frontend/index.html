@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="frontend.js" defer></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Server Status Section -->
+    <div id="serverStatus" class="server-status">
+        Checking server status...
+    </div>
+
+
+    <div class="container">
+        <h1>Stocks Dashboard</h1>
+
+        <!-- Choose date to process Equity Bhavcopy -->
+        <div class="section">
+            <h2>Select Date for Equity Bhavcopy</h2>
+            <input type="date" id="equityBhavcopyDateInput">
+            <button onclick="processEquityBhavcopyForDate()">Process Equity Bhavcopy</button>
+        </div>
+
+        <!-- Display top 10 stocks as a table -->
+        <div class="section">
+            <h2>Top 10 Stocks</h2>
+            <table id="topStocksTable">
+                <thead>
+                    <tr>
+                        <th>Stock Name</th>
+                        <th>Stock Code</th>
+                    </tr>
+                </thead>
+                <tbody id="topStocksBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Search stocks by name -->
+        <div class="section">
+            <h2>Search Stocks by Name</h2>
+            <input type="text" id="stockNameInput" placeholder="Enter stock name">
+            <button onclick="searchStocks()">Search</button>
+            <table id="searchResultsTable">
+                <thead>
+                    <tr>
+                        <th>Stock Name</th>
+                        <th>Stock Code</th>
+                        <th>Open</th>
+                        <th>Close</th>
+                        <th>High</th>
+                        <th>Low</th>
+                    </tr>
+                </thead>
+                <tbody id="searchResultsBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Add to favorites -->
+        <div class="section">
+            <h2>Add to Favorites</h2>
+            <input type="text" id="favoriteNameInput" placeholder="Enter stock name">
+            <input type="text" id="favoriteCodeInput" placeholder="Enter stock code">
+            <button onclick="addToFavorites()">Add to Favorites</button>
+        </div>
+
+        <!-- Display favorite stocks -->
+        <div class="section">
+            <h2>Favorite Stocks</h2>
+            <table id="favoriteStocksTable">
+                <thead>
+                    <tr>
+                        <th>Stock Name</th>
+                        <th>Stock Code</th>
+                        <th>Remove from Favorites</th> <!-- New column for remove button -->
+                    </tr>
+                </thead>
+                <tbody id="favoriteStocksBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Fetch and store stock data -->
+        <div class="section">
+            <h2>Stock chart</h2>
+            <label for="stockNameInput">Enter Stock Name:</label>
+            <input type="text" id="stockInput" placeholder="Stock Name">
+            <button onclick="fetchAndStoreStockDataa()">Get Stock Chart</button>
+        </div>
+
+        <!-- Chart Container -->
+        <div id="chartContainer" style="height: 400px; max-width: 920px; margin: 0px auto;"></div>
+
+
+
+    </div>
+</body>
+
+</html>
