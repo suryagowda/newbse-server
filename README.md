@@ -27,17 +27,18 @@ Welcome to BhavCopy Analyzer.This project aims to get the stock details by using
    ![DataFlow Diagram](/DataFLow.png)
 
 ## Getting Started
+1. Download the project locally
 
-1. Install dependencies:
+2. Install dependencies:
    ```bash
    npm install
+   ```
    
-
-2. Run the server:
+3. Run the server:
     ```bash
     npm start
 
-3. Access API endpoints:
+4. Access API endpoints:
     - Top 10 Stocks: GET /top10stocks
     - Search Stocks: GET /stocks/:name
     - Stock Price History: GET /stockpricehistory/:code
