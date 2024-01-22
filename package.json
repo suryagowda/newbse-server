@@ -2,9 +2,9 @@
   "name": "newbse-server",
   "version": "1.0.0",
   "description": "Backend system for managing and processing stock-related data",
-  "main": "index.js",
+  "main": "backend/index.js",
   "scripts": {
-    "start":"node index.js"
+    "start":"node backend/index.js"
   },
   "repository": {
     "type": "git",
